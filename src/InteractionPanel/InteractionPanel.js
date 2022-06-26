@@ -372,7 +372,7 @@ function InteractionPanel() {
   }
 
   const increment = () => {
-    if (mintAmount < data.maxAmount) setMint(mintAmount + 1)
+    if (mintAmount < data.maxAmount || data.kickflip) setMint(mintAmount + 1)
   }
 
   const decrement = () => {
